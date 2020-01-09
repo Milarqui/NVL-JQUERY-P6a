@@ -7,13 +7,13 @@
  <body>
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script>
-   $( document ).ready(function() {
-    $( "ul li.even").attr( "type" , "square");
-    $( "ul li" ).eq( 6 ).height( "10px" );
-    $( "ul li.odd").each( function () {
-     $(this).text( $(this).text().toUpperCase() );
+   $( document ).ready(function() { //Aplica la función al documento completo
+    $( "ul li.even").attr( "type" , "square"); //Cambia el tipo a los li de la clase even para que sus símbolos sean cuadrados
+    $( "ul li" ).eq( 6 ).height( "10px" );     //Cambia la altura del elemento 7 de la lista
+    $( "ul li.odd").each( function () {        //Para cada li de la clase odd
+     $(this).text( $(this).text().toUpperCase() ); //Cambia su texto para que sea su versión en mayúsculas
     });
-    $( "ul #murcia" ).insertAfter( $( "ul #madrid" ) );
+    $( "ul #murcia" ).insertAfter( $( "ul #madrid" ) ); //Mueve el li con la etiqueta #murcia debajo del li con la etiqueta #madrid
    });
   </script>
   <ul>
